@@ -5,11 +5,10 @@
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">admin</property>
 
-
-        <property name="hibernate.hbm2ddl.auto">update</property> <!--If not specified , doesnot create table on its own. throws error-->
-        <property name="hibernate.show_sql">true</property> <!--It shows the sql query that Hibernate is using BTS-->
-        <!--<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property> optional-->
-
+       <!-- <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>-->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.show_sql">true</property>
+      <!--  <property name="hibernate.format_sql">true</property>-->
 
     </session-factory>
 </hibernate-configuration>
